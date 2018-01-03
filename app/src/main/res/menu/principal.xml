@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/badge_circle_recherche"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Recherche ..."/>
+    <item
+        android:id="@+id/menu_panier"
+        android:icon="@drawable/badge_circle"
+        android:title="Notifications"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_notification"
+        android:icon="@drawable/badge_circle_notification"
+        android:title="Notifications"
+        app:showAsAction="always"/>
+</menu>
+

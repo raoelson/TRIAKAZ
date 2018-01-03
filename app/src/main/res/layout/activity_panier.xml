@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSeconde"
+    android:orientation="vertical"
+    tools:context=".activities.PanierActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layoutBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <include layout="@layout/content_details" />
+    </ScrollView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/activity_margin_content"
+        android:paddingTop="5dp" />
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votre panier est vide"
+        android:id="@+id/text_vide"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimary"
+        android:visibility="invisible"
+        />
+
+
+    <!--<Button
+        android:id="@+id/btnCommande"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="COMMANDER"
+        android:textColor="@color/colorInctave"
+        app:backgroundTint="@color/colorPrimary" />-->
+    <!--<com.dekoservidoni.omfm.OneMoreFabMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:content_options="@menu/content_panier"
+        app:color_main_button="@color/colorPrimaryDark"
+        app:color_secondary_buttons="@color/colorPrimary"
+        app:expanded_background_color="@color/omfm_expanded_background_sample"/>-->
+
+
+    <!--<Button
+        android:id="@+id/btnCommande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Demande de devis"
+        android:textColor="@color/colorInctave"
+        app:backgroundTint="@color/colorPrimary" />-->
+    <include layout="@layout/content_fab">
+
+    </include>
+
+</android.support.design.widget.CoordinatorLayout>

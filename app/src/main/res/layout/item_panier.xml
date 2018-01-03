@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_cardlayout"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/colorSeconde"
+        app:cardCornerRadius="3dp"
+        app:cardPreventCornerOverlap="false"
+        >
+        <ProgressBar
+            android:id="@+id/movie_progress"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="72dp"
+            android:layout_height="96dp" />
+    </android.support.v7.widget.CardView>
+
+    <!-- <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:text="Naturally Flavored Fruit &amp; Herb Detox Water"
+         android:id="@+id/txttitle"
+         android:textSize="16sp"
+         android:layout_marginLeft="15dp"
+         android:lines="1"
+         android:paddingTop="10dp"
+         android:ellipsize="marquee"
+         android:layout_alignTop="@+id/img"
+         android:layout_toRightOf="@+id/img"
+         android:layout_toEndOf="@+id/img" />-->
+    <LinearLayout
+        android:id="@+id/_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_elevation"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Nowadays, user engagement is considered one of the most important metrics for the success of your app" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deletePanier"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_delete_forever_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linear_"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:layout_below="@+id/_linear"
+        >
+
+        <TextView
+            android:id="@+id/txtPrix"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="€210"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ffffffffffffffffff"
+                android:id="@+id/totalpanier"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/_linear"
+        android:layout_alignStart="@+id/_linear"
+        android:layout_below="@+id/linear_"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="Quantité " />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:id="@+id/linerQte">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/decrement_qte_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/background_button"
+                    android:text="-"
+                    android:typeface="serif"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/quantity_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="8dp"
+                    android:typeface="serif"
+                    android:paddingRight="8dp"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/increment_qte_button"
+                    android:background="@drawable/background_button"
+                    android:typeface="serif"
+                    android:text="+"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linerQteEdt"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:paddingLeft="0dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:background="@drawable/background_button"
+                    android:id="@+id/quantity_edit_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="8dp"
+                    android:typeface="serif"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="8dp"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/_linear"
+        android:layout_alignStart="@+id/_linear"
+        android:layout_below="@+id/test"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:id="@+id/contactTarif"
+            android:text="@string/btn_text"
+            android:textColor="@color/colorInctave"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <!--<TextView
+                android:id="@+id/adresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorText"
+                android:textSize="12dp" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal"
+                android:padding="3dip">
+
+                <ImageButton
+                    android:layout_width="55dip"
+                    android:layout_height="40dp"
+                    android:background="@color/colorInctave"
+                    android:src="@mipmap/placeholder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="7, Imm.\n MAHOGANY - Voie Verte - ZI Jarry-97122 BAIE-MAHAULT"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal"
+                android:padding="3dip">
+
+                <ImageButton
+                    android:layout_width="55dip"
+                    android:layout_height="40dp"
+                    android:background="@color/colorInctave"
+                    android:src="@mipmap/internet" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="triakaz.com"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal"
+                android:padding="3dip">
+                <ImageButton
+                    android:layout_width="55dip"
+                    android:layout_height="40dp"
+                    android:background="@color/colorInctave"
+                    android:src="@mipmap/phone_receiver" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="+590 590 94-5612"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal"
+                android:padding="3dip">
+
+                <ImageButton
+                    android:layout_width="55dip"
+                    android:layout_height="40dp"
+                    android:background="@color/colorInctave"
+                    android:src="@mipmap/circular_clock" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Établissement ouvert:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtOuverture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:text="08:00 - 12:00\n14:00 - 16:00\nLUNDI  -  VENDREDI"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal"
+                android:padding="3dip">
+                <ImageButton
+                    android:layout_width="55dip"
+                    android:layout_height="40dp"
+                    android:background="@color/colorInctave"
+                    android:src="@mipmap/circular_clock" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Fermé: "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtFermeture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:text="SAMEDI - DIMANCHE"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="80dp"
+             android:paddingLeft="@dimen/activity_horizontal_margin"
+             android:orientation="horizontal">
+             <ImageButton
+                 android:id="@+id/btnAppel"
+                 android:layout_width="40dp"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/phone"
+                 android:background="@color/colorActive"
+                 android:textColor="@color/colorText"
+                 android:theme="@style/MyButton" />
+             <ImageButton
+                 android:id="@+id/btnMessage"
+                 android:layout_width="45dp"
+                 android:paddingLeft="10dp"
+                 android:layout_height="wrap_content"
+                 android:background="@color/colorActive"
+                 android:src="@drawable/email"
+                 android:theme="@style/MyButton"
+                 android:textColor="@color/colorText" />
+         </LinearLayout>-->
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

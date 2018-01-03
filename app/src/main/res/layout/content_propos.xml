@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorSeconde"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_centerInParent="true"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:id="@+id/test"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="TRIAKAZ est une plateforme en ligne proposant un large choix de produits promotionnels 100% recyclés, recyclables, biologiques, équitables ou issus de l’artisanat de différents territoires."
+                    android:textSize="14dp"
+                    android:gravity="right|left"
+                    android:textAlignment="gravity"
+                    android:textStyle="bold" />
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TableRow
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_place_black_24dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_adresse1"
+                            android:layout_width="wrap_content"
+                            android:ellipsize="end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="3 rue du	Havre 75009 Paris– France 7,Imm. MAHOGANY-Voie Verte - ZI de Jarry97122\nBAIE-MAHAULT" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/colorPrimary" />
+                    <TableRow
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_phone_black_24dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_adresse2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Appelez-nous au : +590 590 94 56 12"
+                            android:ellipsize="end"
+                            android:layout_marginLeft="15dp"
+                            />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TableRow
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_email_black_24dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_codepostal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="E-mail : contact@triakaz.com"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/colorPrimary" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/colorPrimary" />
+                </TableLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- <ImageButton
+             android:id="@+id/user_profile_photo"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:layout_below="@+id/login_title"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="29dp"
+             android:elevation="4dp"
+             android:background="@drawable/apropos"
+             android:src="@mipmap/logo" />-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

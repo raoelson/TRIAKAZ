@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0.9dp"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_below="@+id/txtCountAccueil"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp">
+        <!---->
+        <com.testxml.outils.MapWrapperLayout
+            android:id="@+id/map_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_height="match_parent" />
+        </com.testxml.outils.MapWrapperLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

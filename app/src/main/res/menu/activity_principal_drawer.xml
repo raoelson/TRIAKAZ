@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accueil"
+            android:title="Accueil" />
+
+        <item
+            android:id="@+id/nav_boutique"
+            android:title="Boutique" />
+        <item
+            android:id="@+id/nav_qui_sommes"
+            android:title="Qui sommes-nous?" />
+    </group>
+    <item android:title="INFORMATIONS">
+        <menu>
+            <item
+                android:id="@+id/nav_promotion"
+                android:title="Promotions" />
+            <item
+                android:id="@+id/nav_produits"
+                android:title="Nouveaux Produits" />
+            <item
+                android:id="@+id/nav_vente"
+                android:title="Meilleures Ventes" />
+        </menu>
+    </item>
+    <item android:title="MON COMPTE">
+        <menu>
+            <item
+                android:id="@+id/nav_compte"
+                android:title="Mon compte" />
+            <item
+                android:id="@+id/nav_commande"
+                android:title="Mes commandes" />
+            <item
+                android:id="@+id/nav_identier"
+                android:title="S'identifier" />
+        </menu>
+    </item>
+
+    <item android:title="REVUE DE PRESSE">
+        <menu>
+            <item
+                android:id="@+id/nav_dossier_presse"
+                android:title="Dossier de presse \n à télécharger" />
+            <item
+                android:id="@+id/nav_video"
+                android:title="Vidéos" />
+            <item
+                android:id="@+id/nav_photo"
+                android:title="Photos" />
+            <item
+                android:id="@+id/nav_articles"
+                android:title="Articles en PDF" />
+        </menu>
+    </item>
+
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_propos"
+            android:title="À propos de nous" />
+
+    </group>
+
+</menu>

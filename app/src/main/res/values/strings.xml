@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TRIAKAZ</string>
+    <string name="btn_text">Tarif,Nous contacter</string>
+    <string name="btn_text_details">Voir détails</string>
+    <string name="tap_to_reload">Appuyez sur pour recharger</string>
+    <string name="error_msg_unknown">Une erreur inattendue est apparue</string>
+    <string name="error_msg">Impossible d\'aller chercher des produits.</string>
+    <string name="btn_retry">Recommencez</string>
+    <string name="error_msg_no_internet">Non connecté à Internet</string>
+    <string name="error_msg_timeout">Le serveur a pris trop de temps pour répondre</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="fermer">Fermer</string>
+    <string name="trier">Trier</string>
+    <string name="trierText">TRIER LES PRODUITS PAR </string>
+    <!--<string name="textDesc">"<b>&#149;</b> Les produits sont à récupérer en nos locaux : " +
+                " <b>TRIAKAZ, 3 Immeuble MAHOGANY – Voie Verte – ZI de JARRY – 97122- BAIE-MAHAULT</b>" +
+                ""</string>-->
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">Il y a </string>
+    <string name="time_ago_seconds">moins d\'une minute</string>
+    <string name="time_ago_minute">environ une minute</string>
+    <string name="time_ago_minutes">%d minutes</string>
+    <string name="time_ago_hour">environ une heure</string>
+    <string name="time_ago_hours">environ %d heure</string>
+    <string name="time_ago_day">a day</string>
+    <string name="time_ago_days">%d days</string>
+    <string name="time_ago_month">about a month</string>
+    <string name="time_ago_months">%d months</string>
+    <string name="time_ago_year">about a year</string>
+    <string name="time_ago_years">%d years</string>
+</resources>
